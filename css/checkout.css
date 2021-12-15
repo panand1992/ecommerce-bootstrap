@@ -3,14 +3,7 @@
 	font-size: 32px;
 }
 
-#checkoutPage .cart-wrapper {
-	display: flex;
-	flex-direction: row;
-}
-
 #checkoutPage .cart-wrapper .order-details {
-	display: flex;
-	flex-direction: column;
 	flex: 36;
 	box-shadow: 0px 1px 5px #aaa;
 	padding: 20px;
@@ -19,19 +12,15 @@
 
 #checkoutPage .cart-wrapper .order-details .order-details-title {
 	font-size: 20px;
-	font-weight: bold;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ccc;
 }
 
 #checkoutPage .cart-wrapper .order-details .order-details-product {
-	display: flex;
-	flex-direction: row;
 	margin-top: 20px;
 }
 
 #checkoutPage .cart-wrapper .order-details .order-details-product .order-details-product-img {
-	display: flex;
 	flex: 1;
 }
 
@@ -40,9 +29,7 @@
 }
 
 #checkoutPage .cart-wrapper .order-details .order-details-product .order-details-product-data {
-	display: flex;
 	flex: 2;
-	flex-direction: column;
 	padding: 0 20px;
 	font-size: 24px;
 }
@@ -53,8 +40,6 @@
 }
 
 #checkoutPage .cart-wrapper .price-details {
-	display: flex;
-	flex-direction: column;
 	flex: 14;
 	margin-left: 50px;
 }
@@ -67,7 +52,6 @@
 
 #checkoutPage .cart-wrapper .price-details .price-details-box .price-details-title {
 	font-size: 20px;
-	font-weight: bold;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #ccc;
 }
@@ -77,9 +61,6 @@
 }
 
 #checkoutPage .cart-wrapper .price-details .price-details-box .price-details-data .price-details-item {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 	padding-bottom: 10px;
 }
 
@@ -106,7 +87,6 @@
 }
 
 #checkoutPage .cart-wrapper .price-details .confirm-payment-error-msg {
-	color: #e74c3c;
 	margin-top: 20px;
 }
 

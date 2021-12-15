@@ -4,10 +4,6 @@
 }
 
 .category-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-top: 50px;
 }
 
@@ -15,17 +11,11 @@
     border: 1px solid #2c3e50;
     box-shadow: 0px 0px 2px #999;
     margin: 20px;
-    border-radius: 5px;
     width: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #34495e;
 }
 
 .category-list .category-item a {
-    color: #ffffff;
-    text-decoration: none;
     font-size: 18px;
     padding: 30px 20px;
 }
@@ -33,5 +23,4 @@
 .category-title {
     margin-top: 20px;
     font-size: 18px;
-    text-align: center;
 }

@@ -2,6 +2,7 @@
 <html>
 <title>Ecommerce Application | Product List</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="css/common.css" />
 <link rel="stylesheet" type="text/css" href="css/productList.css" />
 
@@ -10,9 +11,12 @@
 		<div id="header">
 			<div class="container">
 				<div class="row">
-					<div class="header-wrapper">
-						<div class="logo"><a href="/">Ecommerce</a></div>
-						<div class="user-actions"><a href="/cart">Cart</a>
+					<div class="header-wrapper d-flex justify-content-between">
+						<div class="logo d-inline-block">
+							<a class="text-decoration-none" href="/">Ecommerce</a>
+						</div>
+						<div class="user-actions d-flex flex-row">
+							<a class="text-decoration-none" href="/cart">Cart</a>
 							<div class="user-intro">Hi panand2000</div>
 							<div class="logout-btn">Logout</div>
 						</div>
@@ -23,19 +27,22 @@
 		<div class="container">
 			<div class="row">
 				<h2 class="product-list-title text-center">All Products</h2>
-				<div class="product-list-wrapper">
-					<div class="product-list-sidebar">
+				<div class="product-list-wrapper d-flex flex-row">
+					<div class="product-list-sidebar d-flex flex-column">
 						<div class="sidebar-title">Search</div>
-						<div class="sidebar-search form-group"><input type="text" placeholder="Search by name"
-								class="form-control" value=""></div>
-						<div class="sidebar-title">Categories</div><a href="/products?categoryId=MQ==">Electronics</a><a
-							href="/products?categoryId=Mg==">Fashion</a><a
-							href="/products?categoryId=Mw==">Mobiles</a><a
-							href="/products?categoryId=NA==">Appliances</a>
+						<div class="sidebar-search form-group">
+							<input type="text" placeholder="Search by name" class="form-control">
+						</div>
+						<div class="sidebar-title fw-bold">Categories</div>
+						<a class="d-flex text-decoration-none" href="/products?categoryId=MQ==">Electronics</a>
+						<a class="d-flex text-decoration-none" href="/products?categoryId=Mg==">Fashion</a>
+						<a class="d-flex text-decoration-none" href="/products?categoryId=Mw==">Mobiles</a>
+						<a class="d-flex text-decoration-none" href="/products?categoryId=NA==">Appliances</a>
 						<div class="sidebar-title">Filter by Price</div>
 						<div class="price-filter">
-							<div class="price-filter-select">
-								<div class="form-group"><select class="form-select">
+							<div class="price-filter-select d-flex flex-row justify-content-between">
+								<div class="form-group">
+									<select class="form-select">
 										<option value="0">0</option>
 										<option value="1000">1000</option>
 										<option value="2000">2000</option>
@@ -43,8 +50,10 @@
 										<option value="10000">10000</option>
 										<option value="20000">20000</option>
 										<option value="50000">50000</option>
-									</select></div>
-								<div class="form-group"><select class="form-select">
+									</select>
+								</div>
+								<div class="form-group">
+									<select class="form-select">
 										<option value="1000">1000</option>
 										<option value="2000">2000</option>
 										<option value="5000">5000</option>
@@ -52,34 +61,39 @@
 										<option value="20000">20000</option>
 										<option value="50000">50000</option>
 										<option value="-1">100000+</option>
-									</select></div>
+									</select>
+								</div>
 							</div>
-							<div class="price-filter-title">
+							<div class="price-filter-title d-flex flex-row justify-content-between">
 								<div>Min Price</div>
 								<div>Max Price</div>
 							</div>
 						</div>
 						<div class="btn btn-primary clear-filter"> Clear All Filters</div>
 					</div>
-					<div class="product-list-box"><a class="product-item" href="/product/MQ==/details">
-							<div class="product-img"><img
-									src="https://img.favpng.com/8/17/0/product-design-clip-art-logo-food-png-favpng-TsCQEsJH2LUYN3d5Q6RzrTsqL.jpg">
+					<div class="product-list-box">
+						<a class="product-item text-decoration-none d-inline-block" href="/product/MQ==/details">
+							<div class="product-img">
+								<img src="https://img.favpng.com/8/17/0/product-design-clip-art-logo-food-png-favpng-TsCQEsJH2LUYN3d5Q6RzrTsqL.jpg">
 							</div>
-							<div class="product-name">Sony Bravia TV</div>
-							<div class="product-price">₹ 20000</div>
-						</a><a class="product-item" href="/product/Mg==/details">
-							<div class="product-img"><img
-									src="https://img.favpng.com/8/17/0/product-design-clip-art-logo-food-png-favpng-TsCQEsJH2LUYN3d5Q6RzrTsqL.jpg">
+							<div class="product-name text-center">Sony Bravia TV</div>
+							<div class="product-price text-center">₹ 20000</div>
+						</a>
+						<a class="product-item text-decoration-none d-inline-block" href="/product/Mg==/details">
+							<div class="product-img">
+								<img src="https://img.favpng.com/8/17/0/product-design-clip-art-logo-food-png-favpng-TsCQEsJH2LUYN3d5Q6RzrTsqL.jpg">
 							</div>
-							<div class="product-name">TShirt</div>
-							<div class="product-price">₹ 500</div>
-						</a><a class="product-item" href="/product/Mw==/details">
-							<div class="product-img"><img
-									src="https://img.favpng.com/8/17/0/product-design-clip-art-logo-food-png-favpng-TsCQEsJH2LUYN3d5Q6RzrTsqL.jpg">
+							<div class="product-name text-center">TShirt</div>
+							<div class="product-price text-center">₹ 500</div>
+						</a>
+						<a class="product-item text-decoration-none d-inline-block" href="/product/Mw==/details">
+							<div class="product-img">
+								<img src="https://img.favpng.com/8/17/0/product-design-clip-art-logo-food-png-favpng-TsCQEsJH2LUYN3d5Q6RzrTsqL.jpg">
 							</div>
-							<div class="product-name">Samsung Galaxy S3</div>
-							<div class="product-price">₹ 14000</div>
-						</a></div>
+							<div class="product-name text-center">Samsung Galaxy S3</div>
+							<div class="product-price text-center">₹ 14000</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

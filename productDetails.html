@@ -2,6 +2,7 @@
 <html>
 <title>Ecommerce Application | Product Details</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="css/common.css" />
 <link rel="stylesheet" type="text/css" href="css/productDetails.css" />
 
@@ -10,29 +11,36 @@
 		<div id="header">
 			<div class="container">
 				<div class="row">
-					<div class="header-wrapper">
-						<div class="logo"><a href="/">Ecommerce</a></div>
+					<div class="header-wrapper d-flex justify-content-between">
+						<div class="logo d-inline-block">
+							<a class="text-decoration-none" href="/">Ecommerce</a>
+						</div>
+						<div class="user-actions d-flex flex-row">
+							<a class="text-decoration-none" href="/cart">Cart</a>
+							<div class="user-intro">Hi panand2000</div>
+							<div class="logout-btn">Logout</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="product-details-wrapper">
-					<div class="product-img">
-						<div><img
-								src="https://img.favpng.com/8/17/0/product-design-clip-art-logo-food-png-favpng-TsCQEsJH2LUYN3d5Q6RzrTsqL.jpg">
+				<div class="product-details-wrapper d-flex flex-row">
+					<div class="product-img d-flex">
+						<div>
+							<img src="https://img.favpng.com/8/17/0/product-design-clip-art-logo-food-png-favpng-TsCQEsJH2LUYN3d5Q6RzrTsqL.jpg">
 						</div>
 					</div>
-					<div class="product-details-box">
+					<div class="product-details-box d-flex flex-column">
 						<div class="product-name">Sony Bravia TV</div>
-						<div class="product-price">₹ 20000</div>
+						<div class="product-price fw-bold">₹ 20000</div>
 						<div class="product-description">
-							<div class="product-description-title">Description</div>
+							<div class="product-description-title fw-bold">Description</div>
 							<div class="product-description-data">4K Television with Android support</div>
 						</div>
-						<div class="product-details-action btn btn-primary">Add To Cart</div>
-						<div class="add-to-cart-error-msg"></div>
+						<div class="product-details-action btn btn-primary text-decoration-none">Add To Cart</div>
+						<div class="add-to-cart-error-msg text-danger"></div>
 					</div>
 				</div>
 			</div>

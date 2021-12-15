@@ -3,14 +3,7 @@
 	font-size: 32px;
 }
 
-#cartPage .cart-wrapper {
-	display: flex;
-	flex-direction: row;
-}
-
 #cartPage .cart-wrapper .order-details {
-	display: flex;
-	flex-direction: column;
 	flex: 36;
 	box-shadow: 0px 1px 5px #aaa;
 	padding: 20px;
@@ -19,19 +12,15 @@
 
 #cartPage .cart-wrapper .order-details .order-details-title {
 	font-size: 20px;
-	font-weight: bold;
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ccc;
 }
 
 #cartPage .cart-wrapper .order-details .order-details-product {
-	display: flex;
-	flex-direction: row;
 	margin-top: 20px;
 }
 
 #cartPage .cart-wrapper .order-details .order-details-product .order-details-product-img {
-	display: flex;
 	flex: 1;
 }
 
@@ -40,9 +29,7 @@
 }
 
 #cartPage .cart-wrapper .order-details .order-details-product .order-details-product-data {
-	display: flex;
 	flex: 2;
-	flex-direction: column;
 	padding: 0 20px;
 	font-size: 24px;
 }
@@ -53,9 +40,7 @@
 }
 
 #cartPage .cart-wrapper .order-details .order-details-product .order-details-product-actions {
-	display: flex;
 	flex: 1;
-	flex-direction: column;
 }
 
 #cartPage
@@ -74,13 +59,10 @@
 	.order-details-product-actions
 	.order-details-product-quantity
 	> div:first-child {
-	font-weight: bold;
 	margin-bottom: 5px;
 }
 
 #cartPage .cart-wrapper .price-details {
-	display: flex;
-	flex-direction: column;
 	flex: 14;
 	margin-left: 50px;
 }
@@ -93,7 +75,6 @@
 
 #cartPage .cart-wrapper .price-details .price-details-box .price-details-title {
 	font-size: 20px;
-	font-weight: bold;
 	padding-bottom: 10px;
 	border-bottom: 1px solid #ccc;
 }
@@ -103,9 +84,6 @@
 }
 
 #cartPage .cart-wrapper .price-details .price-details-box .price-details-data .price-details-item {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 	padding-bottom: 10px;
 }
 
@@ -123,11 +101,9 @@
 #cartPage .cart-wrapper .price-details .continue-shopping-btn {
 	width: 200px;
 	margin: 30px auto 0;
-	text-decoration: none;
 }
 
 #cartPage .cart-wrapper .price-details .checkout-btn {
 	width: 200px;
 	margin: 20px auto 0;
-	text-decoration: none;
 }

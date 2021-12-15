@@ -1,11 +1,8 @@
 #productDetailsPage .product-details-wrapper {
-	display: flex;
-	flex-direction: row;
 	padding-top: 20px;
 }
 
 #productDetailsPage .product-details-wrapper .product-img {
-	display: flex;
 	flex: 2;
 	padding-right: 50px;
 }
@@ -20,9 +17,7 @@
 }
 
 #productDetailsPage .product-details-wrapper .product-details-box {
-	display: flex;
 	flex: 3;
-	flex-direction: column;
 }
 
 #productDetailsPage .product-details-wrapper .product-details-box .product-name {
@@ -32,7 +27,6 @@
 #productDetailsPage .product-details-wrapper .product-details-box .product-price {
 	margin-top: 20px;
 	font-size: 32px;
-	font-weight: bold;
 }
 
 #productDetailsPage .product-details-wrapper .product-details-box .product-description {
@@ -41,7 +35,6 @@
 
 #productDetailsPage .product-details-wrapper .product-details-box .product-description .product-description-title {
 	color: #666;
-	font-weight: bold;
 	margin-bottom: 5px;
 }
 
@@ -52,10 +45,8 @@
 #productDetailsPage .product-details-wrapper .product-details-box .product-details-action {
 	margin-top: 40px;
 	width: 250px;
-	text-decoration: none;
 }
 
 #productDetailsPage .product-details-wrapper .product-details-box .add-to-cart-error-msg {
 	margin-top: 20px;
-	color: #e74c3c;
 }
